@@ -48,6 +48,6 @@ variable "network" {
 }
 
 variable "node-count" {
-  default = 2
+  default = 3
 }
 
