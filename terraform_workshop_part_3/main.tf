@@ -59,7 +59,7 @@ provisioner "file" {
   
     connection {
       type        = "ssh"
-      private_key = file(var.private_key_path)
+      private_key = file(var.private-key-path)
       user        = "centos"
       timeout     = "5m"
       host        = self.access_ip_v4
@@ -71,7 +71,7 @@ provisioner "remote-exec" {
 
     connection {
       type        = "ssh"
-      private_key = file(var.private_key_path)
+      private_key = file(var.private-key-path)
       user        = "centos"
       timeout     = "5m"
       host        = self.access_ip_v4
@@ -83,7 +83,7 @@ provisioner "remote-exec" {
 
     connection {
       type        = "ssh"
-      private_key = file(var.private_key_path)
+      private_key = file(var.private-key-path)
       user        = "centos"
       timeout     = "5m"
       host	  = self.access_ip_v4
@@ -96,7 +96,7 @@ provisioner "file" {
 
     connection {
       type        = "ssh"
-      private_key = file(var.private_key_path)
+      private_key = file(var.private-key-path)
       user        = "centos"
       timeout     = "5m"
       host        = self.access_ip_v4

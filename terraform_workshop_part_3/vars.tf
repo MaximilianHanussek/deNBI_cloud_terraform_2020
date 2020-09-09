@@ -69,7 +69,7 @@ variable "compute-node-count" {
   default = 2
 }
 
-variable "private_key_path" {
-  default = "/Users/maximilianhanussek/Documents/Zertifikate/maximilian-demo.pem"
+variable "private-key-path" {
+  default = "/Users/maximilianhanussek/Documents/Zertifikate/maximilian-demo.pem" #replace path with correct path for your private key
 }
 
