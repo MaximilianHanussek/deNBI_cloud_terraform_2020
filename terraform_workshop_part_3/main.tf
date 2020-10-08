@@ -66,6 +66,19 @@ provisioner "file" {
     }
   } 
 
+provisioner "file" {
+    source = "config"
+    destination = "~/.ssh/config"
+
+    connection {
+      type        = "ssh"
+      private_key = file(var.private-key-path)
+      user        = "centos"
+      timeout     = "5m"
+      host        = self.access_ip_v4
+    }
+  }
+
 provisioner "remote-exec" {
     script = "set_internal_private_key_permissions.sh"
 
