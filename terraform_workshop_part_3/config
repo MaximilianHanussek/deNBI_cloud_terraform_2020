@@ -1,0 +1,4 @@
+Host 192.168.0.*
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+   IdentityFile /home/centos/.ssh/connection_key.pem
